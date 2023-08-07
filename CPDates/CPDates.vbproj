@@ -1,0 +1,155 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <UseWPF>False</UseWPF>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <ApplicationIcon>CPDates.ico</ApplicationIcon>
+    <ImportedNamespaces>CPDates.My=False,CPDates.My.Resources=False,Microsoft.CSharp=False,Microsoft.CSharp.RuntimeBinder=False,Microsoft.VisualBasic.ApplicationServices=False,Microsoft.VisualBasic.CompilerServices=False,Microsoft.VisualBasic.Devices=False,Microsoft.VisualBasic.FileIO=False,Microsoft.VisualBasic.Logging=False,Microsoft.VisualBasic.MyServices=False,Microsoft.VisualBasic.MyServices.Internal=False,Microsoft.Win32=False,Microsoft.Win32.SafeHandles=False,System.Collections.Concurrent=False,System.Collections.Immutable=False,System.Collections.ObjectModel=False,System.Collections.Specialized=False,System.ComponentModel.DataAnnotations=False,System.ComponentModel.DataAnnotations.Schema=False,System.ComponentModel.Design=False,System.ComponentModel.Design.Serialization=False,System.Configuration.Assemblies=False,System.Configuration.Internal=False,System.Configuration.Provider=False,System.Data=False,System.Diagnostics.CodeAnalysis=False,System.Diagnostics.Contracts=False,System.Diagnostics.Eventing.Reader=False,System.Diagnostics.Metrics=False,System.Diagnostics.PerformanceData=False,System.Diagnostics.SymbolStore=False,System.Diagnostics.Tracing=False,System.Drawing=False,System.IO.Packaging=False,System.Runtime.CompilerServices=False,System.Runtime.ConstrainedExecution=False,System.Runtime.ExceptionServices=False,System.Runtime.InteropServices=False,System.Runtime.InteropServices.ComTypes=False,System.Runtime.InteropServices.ObjectiveC=False,System.Runtime.Intrinsics=False,System.Runtime.Intrinsics.Arm=False,System.Runtime.Intrinsics.X86=False,System.Runtime.Loader=False,System.Runtime.Remoting=False,System.Runtime.Serialization=False,System.Runtime.Serialization.Formatters=False,System.Runtime.Serialization.Formatters.Binary=False,System.Runtime.Serialization.Json=False,System.Runtime.Versioning=False,System.Security.AccessControl=False,System.Security.Authentication=False,System.Security.Authentication.ExtendedProtection=False,System.Security.Claims=False,System.Security.Cryptography=False,System.Security.Cryptography.Pkcs=False,System.Security.Cryptography.X509Certificates=False,System.Security.Cryptography.Xml=False,System.Security.Permissions=False,System.Security.Policy=False,System.Security.Principal=False,System.Windows.Forms=False,Microsoft.VisualBasic=True,System=True,System.Collections=True,System.Collections.Generic=True,System.Diagnostics=True,System.Linq=True,System.Xml.Linq=True,System.Threading.Tasks=True,CPDates=True</ImportedNamespaces>
+    <Title>CPDates</Title>
+    <Company>DevMaxD</Company>
+    <PackageIcon>CPDates.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="CPDates.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="CPDates.My" />
+    <Import Include="CPDates.My.Resources" />
+    <Import Include="Microsoft.CSharp" />
+    <Import Include="Microsoft.CSharp.RuntimeBinder" />
+    <Import Include="Microsoft.VisualBasic.ApplicationServices" />
+    <Import Include="Microsoft.VisualBasic.CompilerServices" />
+    <Import Include="Microsoft.VisualBasic.Devices" />
+    <Import Include="Microsoft.VisualBasic.FileIO" />
+    <Import Include="Microsoft.VisualBasic.Logging" />
+    <Import Include="Microsoft.VisualBasic.MyServices" />
+    <Import Include="Microsoft.VisualBasic.MyServices.Internal" />
+    <Import Include="Microsoft.Win32" />
+    <Import Include="Microsoft.Win32.SafeHandles" />
+    <Import Include="System.Collections.Concurrent" />
+    <Import Include="System.Collections.Immutable" />
+    <Import Include="System.Collections.ObjectModel" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.ComponentModel.DataAnnotations" />
+    <Import Include="System.ComponentModel.DataAnnotations.Schema" />
+    <Import Include="System.ComponentModel.Design" />
+    <Import Include="System.ComponentModel.Design.Serialization" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Configuration.Assemblies" />
+    <Import Include="System.Configuration.Internal" />
+    <Import Include="System.Configuration.Provider" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics.CodeAnalysis" />
+    <Import Include="System.Diagnostics.Contracts" />
+    <Import Include="System.Diagnostics.Eventing.Reader" />
+    <Import Include="System.Diagnostics.Metrics" />
+    <Import Include="System.Diagnostics.PerformanceData" />
+    <Import Include="System.Diagnostics.SymbolStore" />
+    <Import Include="System.Diagnostics.Tracing" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.IO.Compression" />
+    <Import Include="System.IO.Enumeration" />
+    <Import Include="System.IO.IsolatedStorage" />
+    <Import Include="System.IO.MemoryMappedFiles" />
+    <Import Include="System.IO.Packaging" />
+    <Import Include="System.IO.Pipes" />
+    <Import Include="System.Reflection.Emit" />
+    <Import Include="System.Reflection.Metadata" />
+    <Import Include="System.Reflection.Metadata.Ecma335" />
+    <Import Include="System.Reflection.PortableExecutable" />
+    <Import Include="System.Resources.Extensions" />
+    <Import Include="System.Runtime.CompilerServices" />
+    <Import Include="System.Runtime.ConstrainedExecution" />
+    <Import Include="System.Runtime.ExceptionServices" />
+    <Import Include="System.Runtime.InteropServices" />
+    <Import Include="System.Runtime.InteropServices.ComTypes" />
+    <Import Include="System.Runtime.InteropServices.ObjectiveC" />
+    <Import Include="System.Runtime.Intrinsics" />
+    <Import Include="System.Runtime.Intrinsics.Arm" />
+    <Import Include="System.Runtime.Intrinsics.X86" />
+    <Import Include="System.Runtime.Loader" />
+    <Import Include="System.Runtime.Remoting" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Runtime.Serialization.Formatters" />
+    <Import Include="System.Runtime.Serialization.Formatters.Binary" />
+    <Import Include="System.Runtime.Serialization.Json" />
+    <Import Include="System.Runtime.Versioning" />
+    <Import Include="System.Security.AccessControl" />
+    <Import Include="System.Security.Authentication" />
+    <Import Include="System.Security.Authentication.ExtendedProtection" />
+    <Import Include="System.Security.Claims" />
+    <Import Include="System.Security.Cryptography" />
+    <Import Include="System.Security.Cryptography.Pkcs" />
+    <Import Include="System.Security.Cryptography.X509Certificates" />
+    <Import Include="System.Security.Cryptography.Xml" />
+    <Import Include="System.Security.Permissions" />
+    <Import Include="System.Security.Policy" />
+    <Import Include="System.Security.Principal" />
+    <Import Include="System.Text.Encodings.Web" />
+    <Import Include="System.Text.Json.Nodes" />
+    <Import Include="System.Text.Json.Serialization" />
+    <Import Include="System.Text.Json.Serialization.Metadata" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\CPDates.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
